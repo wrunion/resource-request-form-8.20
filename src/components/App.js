@@ -7,8 +7,8 @@ const App = () => {
   return (
   <div className="App">
     <h1>{TITLE}</h1>
-    <h2>{SUB_TITLE}</h2>
-    <p>{INTRO_PARAGRAPH}</p>
+    {/* <h2>{SUB_TITLE}</h2> */}
+    {/* <p>{INTRO_PARAGRAPH}</p> */}
     <Form />
   </div>
   )

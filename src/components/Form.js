@@ -1,5 +1,5 @@
 import React from 'react';
-import { SERVICES } from './../constants/CONSTANTS';
+import { SERVICES, CHECKBOXES, DEMOGRAPHIC_GROUPS } from './../constants/CONSTANTS';
 
 export default class Form extends React.Component {
   render() {
@@ -15,8 +15,17 @@ export default class Form extends React.Component {
           <h3>Located In:</h3>
           City: <input type="text" placeholder="City" /> - or - Zipcode: <input type="text" placeholder="Zip Code" /> 
           <div>
-            <h3>Service types: </h3><p>(Check any that apply)</p>
-            {SERVICES.sort().map((e,i) => <><input type="checkbox" name="serviceType" value={e} id={i} key={i} text={e}/> {e}  </>)}
+            <h3>Service types:</h3>
+            <p>(Check any that apply)</p>
+            <div className="Services">{SERVICES.sort().map((e,i) => <><input type="checkbox" name="serviceType" className="Service" value={e} id={i} key={i} text={e}/> {e}  </>)}</div>
+          </div>
+          <div className="Demographics1">
+            <h3>The person looking for services is: </h3>
+            <div className="Services">{CHECKBOXES.sort().map((e,i) => <><input type="checkbox" name="serviceType" className="Service" value={e} id={i} key={i} text={e}/> {e}  </>)}</div>
+          </div>
+          <div className="Demographics2">
+            {/* <h3>Additional Demographics: </h3> */}
+            <div className="Services">{DEMOGRAPHIC_GROUPS.sort().map((e,i) => <><input type="checkbox" name="serviceType" className="Service" value={e} id={i} key={i} text={e}/> {e}  </>)}</div>
           </div>
         </div>
 

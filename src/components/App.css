@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.Form {
+  border: 1px lightgrey solid;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.Services {
+  width: 60vw;
+  margin-right: auto;
+  margin-left: 20%;
+}
+
+.Service {
+  margin-top: 1em;
+}

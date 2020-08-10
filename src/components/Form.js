@@ -18,12 +18,12 @@ export default class Form extends React.Component {
             <h3>Service types:</h3>
             <p>(Check any that apply)</p>
             <div className="Services">{SERVICES.sort().map((e,i) => <><input type="checkbox" name="serviceType" className="Service" value={e} id={i} key={i} text={e}/> {e}  </>)}</div>
-            <br />
+            {/* <br />
             <label>Other: </label><br/>
             <textarea
               placeholder="List other services needed here"
               rows={3}
-              ></textarea>
+              ></textarea> */}
           </div>
           <div className="Demographics1">
             <h3>The person looking for services is: </h3>
@@ -36,7 +36,8 @@ export default class Form extends React.Component {
         </div>
         <div className="Income">
             <h3>Income (optional): <input type="text" id="incomeInput" placeholder="Approximate Income"/></h3>
-          </div>
+          </div>  
+        <button type="submit">Submit</button>  
       </div>
     )
   }
